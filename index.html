@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">  
+		<!-- owl-carousel -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrap">
+			<!-- <section>
+				<div class="main">
+					<p>Главная</p>
+				</div> 
+			</section> -->
+			<section>
+				<div class="top_header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 gerb_content">
+								<div class="gerb">
+									<img src="img/gerb.png" alt="герб">	
+								</div>
+								<h4>
+									Министерство по развитию
+									информационных технологий
+									и коммуникаций Республика Узбекистан
+								</h4>
+							</div>
+							<div class="col-md-4 list_content">
+								<ul class="menu_about">
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Инвесторы</a></li>
+									<li><a href="#">Каталог</a></li>
+									<li><a href="#">События</a></li>
+								</ul>
+							</div>
+							<div class="col-md-4 lang_content">
+								<div class="lang-search">
+									<div class="lang">
+										<ul>
+											<li><a href="#">Uz</a></li>
+											<li><a href="#">Ru</a></li>
+											<li><a href="#">Eng</a></li>
+										</ul>
+									</div>
+									<div class="search">
+										<a href="#" class="search-toggler"><img src="img/search.png" alt="search"></a>										
+									</div>
+								</div>
+								<div class="enter_btn">
+									<a href="#">Вход / Регистрация</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="hd-carosel">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<img src="img/banner.jpg" class="fadeIn" alt="banner">
+							<div class="caption">
+								<div class="carousel-caption-content">
+									<h1>Мы поможем вам реализовать проекты в сфере ИКТ</h1>
+								</div>
+								<div class="content-btn">
+									<a href="#">Стать инвестором</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/banner.jpg" class="fadeIn" alt="banner">
+							<div class="caption">
+								<div class="carousel-caption-content">
+									<h1>Мы поможем вам реализовать проекты в сфере ИКТ</h1>
+								</div>
+								<div class="content-btn">
+									<a href="#">Стать инвестором</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      		</section>
+
+
+      <div class="clearfix"></div>
+		</div><!-- wrap -->
+		
+		<!-- Scripts -->
+			<!-- jquery -->
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+		<!-- owl-carousel -->
+		<script>
+			$(document).ready(function() {
+
+				var owl = $('.owl-carousel').owlCarousel({
+					loop:true,
+					items:1,
+					nav: true,
+					dots:false,
+					navText: ["<img src='img/left-btn.png'>","<img src='img/right-btn.png'>"],
+					autoplay: 2000,
+				});
+
+				
+			});
+		</script>
+</body>
+</html>
