@@ -331,3 +331,31 @@ button.owl-next {
     outline: none;
     background: transparent;
 }
+.slick-dots li button:before{
+    font-size: 60px;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 0px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 0;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #333;
+}
+.slick-dots li button:before{
+    content: none;
+}
