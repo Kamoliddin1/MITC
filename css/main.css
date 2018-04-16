@@ -213,11 +213,22 @@ button.owl-next {
 .popular-photo img {
     border-radius: 6px 6px 0 0;
 }
-.projects h1{
-    font-size: 28px;
+.projects {
     margin-top: 115px;
     padding-bottom: 40px;
+}
+.projects h1 {
+    font-size: 28px;
+    margin: 0;
     padding-left: 13px;
+    display: inline-block;
+}
+.projects a {
+    padding-right: 13px;
+    padding-top: 12px;
+    text-decoration: underline;
+    float: right;
+    display: block;
 }
 .popular-content{
     background: #fff;
