@@ -148,6 +148,7 @@ ul.menu_about{
     left: 0;
     right: 0;
     margin: 0 auto;
+    margin-top: 45px;
     transform: translateY(-50%);
     display: block;
     width: 1170px;
@@ -169,9 +170,13 @@ ul.menu_about{
     width: 100%;
 }
 button.owl-prev {
+    position: absolute;
+    left: 15%;
     float: left;
 }
 button.owl-next {
+    position: absolute;
+    right: 15%;
     float: right;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -184,12 +189,68 @@ button.owl-next {
 }
 .content-btn{
     text-align: center;
+    padding-top: 30px;
 }
 .content-btn a{
+    text-decoration: none;
     /*display: inline-block;*/
-    padding: 8px 10px;
+    padding: 8px 30px;
     border-radius: 8px;
     border: 1px solid #fff;
     color: #fff;
     font-size: 14px;
+}
+.popular{
+    background: #fafafa;
+    color: #1c2130; 
+    padding-bottom: 100px;
+}
+.popular-item{
+    -webkit-box-shadow: 0px 3px 12px -1px rgba(230,234,239,0.75);
+    -moz-box-shadow: 0px 3px 12px -1px rgba(230,234,239,0.75);
+    box-shadow: 0px 3px 12px -1px rgba(230,234,239,0.75);
+}
+.popular-photo img {
+    border-radius: 6px 6px 0 0;
+}
+.projects h1{
+    font-size: 28px;
+    margin-top: 115px;
+    padding-bottom: 40px;
+    padding-left: 13px;
+}
+.popular-content{
+    background: #fff;
+    padding: 1px 17px 8px 12px;
+}
+.popular-content h1{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 9px;
+}
+.popular-p p{
+    padding-bottom: 25px;
+}
+.popular-p h5{
+    color: #939393;
+}
+.slick-prev:before {
+    content: "\f104";
+	font: normal normal normal 30px/0 FontAwesome;
+	background: none;
+	color: #203dd4;
+	opacity: 0.75;
+}
+.slick-next:before {
+    content: "\f105";
+	font: normal normal normal 30px/0 FontAwesome;
+	background: none;
+	color: #203dd4;
+	opacity: 0.75;
+}
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+		<title>Document</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/gerb.png" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="css/fonts.css">
     <!-- Bootstrap -->
@@ -13,6 +16,9 @@
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<!-- slick -->
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -93,9 +99,109 @@
 					</div>
 				</div>
       		</section>
+			<div class="clearfix"></div>
+			<section>
+				<div class="popular">
+					<div class="container">
+						<div class="row">
+							
+							<div class="projects">
+								<h1>Популярные проекты</h1>
+								<a href="#">Все проекты</a>	
+							</div>
+
+							<div class="popular-slick">
+								<div class="col-md-4">
+									<div class="popular-item">
+										<div class="popular-photo">
+											<img src="img/content-photo1.jpg" alt="popular-photos">
+										</div>
+										<div class="popular-content">
+											<h1>
+												Lorem ipsum dolor sit amet, consectetur
+												adipisicing elit, sed do eiusmod tempor
+											</h1>
+											<div class="popular-p">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+													exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+												</p>
+												<h5>07-04-2018</h5>
+											</div>
+										</div>	
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="popular-item">
+										<div class="popular-photo">
+											<img src="img/content-photo2.jpg" alt="popular-photos">
+										</div>
+										<div class="popular-content">
+											<h1>
+												Lorem ipsum dolor sit amet, consectetur
+												adipisicing elit, sed do eiusmod tempor
+											</h1>
+											<div class="popular-p">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+													exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+												</p>
+												<h5>07-04-2018</h5>
+											</div>
+										</div>	
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="popular-item">
+										<div class="popular-photo">
+											<img src="img/content-photo3.jpg" alt="popular-photos">
+										</div>
+										<div class="popular-content">
+											<h1>
+												Lorem ipsum dolor sit amet, consectetur
+												adipisicing elit, sed do eiusmod tempor
+											</h1>
+											<div class="popular-p">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+													exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+												</p>
+												<h5>07-04-2018</h5>
+											</div>
+										</div>	
+									</div>
+								</div>
+								<div class="col-md-4">
+										<div class="popular-item">
+											<div class="popular-photo">
+												<img src="img/content-photo3.jpg" alt="popular-photos">
+											</div>
+											<div class="popular-content">
+												<h1>
+													Lorem ipsum dolor sit amet, consectetur
+													adipisicing elit, sed do eiusmod tempor
+												</h1>
+												<div class="popular-p">
+													<p>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud
+														exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+													</p>
+													<h5>07-04-2018</h5>
+												</div>
+											</div>	
+										</div>
+									</div>
+							</div>
+							
+
+						</div>
+					</div>
+				</div>
+			</section>
 
 
-      <div class="clearfix"></div>
+
+
 		</div><!-- wrap -->
 		
 		<!-- Scripts -->
@@ -114,9 +220,22 @@
 					navText: ["<img src='img/left-btn.png'>","<img src='img/right-btn.png'>"],
 					autoplay: 2000,
 				});
-
-				
 			});
 		</script>
+		
+		<!-- slick -->
+		<script src="js/slick.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.popular-slick').slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true,
+					autoplay: true,
+					autoplaySpeed: 3000,
+				});
+			});
+		</script>
+
 </body>
 </html>
