@@ -367,13 +367,15 @@ li.slick-active button {
 .slick-dots li button {
     width: 30px;
     height: 0;
-    padding-top: 0px;
+    padding: 2px;
     cursor: pointer;
     background: #d4d4d4;
+    
 }
 .slick-dots li button:before{
     content: none;
 }
+/* Секция Google MAP */
 .footer-map{
     position: relative;
 }
@@ -386,7 +388,7 @@ li.slick-active button {
     color: #333;
     background: #fff;
     border-radius: 7px;
-    bottom: 25%;
+    bottom: 20%;
     z-index: 5;
     width: 520px;
 }
@@ -398,7 +400,7 @@ li.slick-active button {
     padding-left: 90px;
 }
 ul.info {
-    padding: 20px 0 30px 0;
+    padding: 20px 0 25px 0;
 }
 .info-icons{
     display: inline-block;
@@ -419,3 +421,13 @@ p.address {
 .pin_map{
     vertical-align: top;
 }
+.social-icons{
+    display: inline-block;
+    margin-bottom: 55px;
+}
+.social-icons-item{
+    display: inline-block;
+    margin-right: 15px;
+}
+/* Секция Footer */
+
