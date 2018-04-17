@@ -208,10 +208,12 @@
 							</div>
 
 							<div class="news-carousel">
-								<div class="col-md-4">
+								<!-- <div class="col-md-4"> -->
 									<div class="news-item">
 										<div class="news-photo">
-											<img src="img/news_1.jpg" alt="news-photos">
+											<div class="news-animate">
+												<img src="img/news_1.jpg" alt="news-photos">
+											</div>
 											<div class="news-content">
 												<div class="news-content-date">
 													24 Марта 2018
@@ -222,11 +224,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
+								<!-- </div> -->
+								<!-- <div class="col-md-4"> -->
 									<div class="news-item">
 										<div class="news-photo">
-											<img src="img/news_2.jpg" alt="news-photos">
+											<div class="news-animate">
+													<img src="img/news_2.jpg" alt="news-photos">
+											</div>
 											<div class="news-content">
 												<div class="news-content-date">
 													28 февраля 2018
@@ -237,11 +241,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
+								<!-- </div> -->
+								<!-- <div class="col-md-4"> -->
 									<div class="news-item">
 										<div class="news-photo">
-											<img src="img/news_3.jpg" alt="news-photos">
+											<div class="news-animate">
+												<img src="img/news_3.jpg" alt="news-photos">
+											</div>
 											<div class="news-content">
 												<div class="news-content-date">
 													25 февраля 2018
@@ -252,11 +258,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4">
+								<!-- </div> -->
+								<!-- <div class="col-md-4"> -->
 									<div class="news-item">
 										<div class="news-photo">
-											<img src="img/news_3.jpg" alt="news-photos">
+											<div class="news-animate">
+												<img src="img/news_1.jpg" alt="">
+											</div>
 											<div class="news-content">
 												<div class="news-content-date">
 													25 февраля 2018
@@ -267,15 +275,70 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								<!-- </div> -->
 							</div>
 						</div>
 					</div>
 				</div>		
 			</section>
-
-
-
+			<section class="footer-map">
+				<div id="map"></div>
+					<div class="container">
+						<div class="contacts">
+							<div class="info-list">
+								<h1>Контакты</h1>
+								<ul class="info">
+									<div>
+										<div class="info-icons">
+											<img src="img/email.png" alt="emailpng">
+										</div>
+										<li>
+											<p>info@mitc.uz</p>
+										</li>
+									</div>
+									<div>
+										<div class="info-icons">
+											<img src="img/phone.png" alt="emailpng">
+										</div>
+										<li>
+											<p>+99871 238-41-07</p>
+										</li>
+									</div>
+									<div>
+										<div class="info-icons">
+											<img src="img/fax.png" alt="emailpng">
+										</div>
+										<li>
+											<p>+99871 239-87-82</p>
+										</li>
+									</div>
+									<div>
+										<div class="info-icons pin_map">
+											<img src="img/pin_map.png" alt="emailpng">
+										</div>
+										<li>
+											<p class="address" >Ташкент, 100047, проспект
+												Амира Темура, 4
+											</p>
+										</li>
+									</div>
+									<div>
+										<div class="info-icons">
+											<img src="img/clock.png" alt="emailpng">
+										</div>
+										<li>
+											<p>понедельник - пятница: 9:00 - 18:00
+											</p>
+										</li>
+									</div>
+									
+								</ul>
+							</div>
+							
+						</div>	
+					</div>
+				
+			</section>
 
 		</div><!-- wrap -->
 		
@@ -320,12 +383,38 @@
 					infinite: true,
 					// autoplay: true,
 					dots: true,
+					centerMode: true,
+					centerPadding: '0px',	
 					prevArrow: "<img class='slick-prev slick-arrow' src='img/left.png'>",
 					nextArrow: "<img class='slick-next slick-arrow' src='img/right.png'>",	
 					autoplaySpeed: 2000,
 				});
 			});
 		</script>
+		<!-- Google Map -->
+		<script>
+			function initMap(){
+				// Map options
+				var options = {
+					zoom:14,
+					scrollwheel:false,
+					draggable:false,
+					center:{lat:41.3085277,lng:69.2785741}
+				}
+				// New map
+				var map = new google.maps.Map(document.getElementById('map'),options);
 
+				// add marker
+				var image = 'img/loc.png'
+				var beachMarker = new google.maps.Marker({
+					position:{lat:41.3085277,lng:69.2785741},
+					map: map,
+					icon:image,
+				})
+
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm72wo2sKav0JM5MVwp3UPSJSGg_X588A&callback=initMap"
+    async defer></script>
 </body>
 </html>

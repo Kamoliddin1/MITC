@@ -265,20 +265,18 @@ button.owl-next {
     position: absolute;
     top: -50px;
     background: #fff;
-    padding: 18px;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 20px 20px 0;
+    height: 30px;
 }
 .wrap-slick button.slick-prev.slick-arrow{
     left: auto;
-    right: 51px;
+    right: 55px;
     border-radius: 20px 0 0 20px;
-    padding-left: 13px;
-    padding-right: 25px;
+    padding: 6px 12px 0px 9px;
 }
 .wrap-slick button.slick-next.slick-arrow {
-    right: 15px;
-    padding-left: 12px;
-    padding-right: 23px;
+    right: 21px;
+    padding: 6px 9px 0px 12px;
 }
 .col-md-4.slick-slide:focus {
     outline: none;
@@ -289,6 +287,22 @@ button.owl-next {
     font-family: 'Montserrat-Regular';
     margin-bottom: 90px;
 }
+.news-animate{
+    position: relative;
+    width: 382px;
+    min-height: auto;
+    transition: background-color 0.5s;
+}
+.news-animate{
+    background: rgba(0,0,0,.5);
+}
+.news-animate:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+}
+
 .news-content {
     margin-left: 30px;
 }
@@ -306,6 +320,7 @@ button.owl-next {
     position: absolute;
     bottom: 50px;
     font-size: 18px;
+    width: 7%;
 }
 .slick-next{
     right: -70px;
@@ -331,6 +346,9 @@ button.owl-next {
     outline: none;
     background: transparent;
 }
+.slick-dots{
+    bottom: -50px;
+}
 .slick-dots li button:before{
     font-size: 60px;
 }
@@ -343,19 +361,61 @@ button.owl-next {
     padding: 0;
     cursor: pointer;
 }
+li.slick-active button {
+    background: #333!important;
+}
 .slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
+    width: 30px;
     height: 0;
-    padding: 5px;
+    padding-top: 0px;
     cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: #333;
+    background: #d4d4d4;
 }
 .slick-dots li button:before{
     content: none;
+}
+.footer-map{
+    position: relative;
+}
+#map{
+    height: 780px;
+    width: 100%;
+}
+.contacts{
+    position: absolute;
+    color: #333;
+    background: #fff;
+    border-radius: 7px;
+    bottom: 25%;
+    z-index: 5;
+    width: 520px;
+}
+.contacts h1{
+    padding-top: 60px;
+    font-family: 'Montserrat-Regular';
+}
+.info-list{
+    padding-left: 90px;
+}
+ul.info {
+    padding: 20px 0 30px 0;
+}
+.info-icons{
+    display: inline-block;
+}
+ul.info li {
+    display: inline-block;
+    line-height: 3;
+    margin-left: 14px;
+}
+.info li p {
+    font-family: 'OpenSans-SemiBold';
+    color: #666666;
+}
+p.address {
+    width: 70%;
+    line-height: normal;
+}
+.pin_map{
+    vertical-align: top;
 }
