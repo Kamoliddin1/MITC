@@ -291,33 +291,35 @@ button.owl-next {
     font-family: 'Montserrat-Regular';
     margin-bottom: 90px;
 }
-.news-animate{
-    position: relative;
-    width: 382px;
-    min-height: auto;
-    transition: background-color 0.5s;
-}
+
 .news-item.slick-slide:focus {
     outline: none;
 }
 .slick-center img{
-    opacity: 1;
-    transform: scale(1.08);
+    /* opacity: 1; */
+    /* transform: scale(1.08); */
 }
 .slick-center img{
     transition: all 300ms ease;
     opacity: 0.8;
 }
- .news-animate{
-    /* background: rgba(0,0,0,.5); */
-    padding-left: 40px;
+.news-animate{
+    position: relative;
+    width: 382px;
+    min-height: auto;
+    transition: background-color 0.5s;
+    background: rgba(0,0,0,.5);
 }
-/*.news-animate:before {
+
+.news-animate:before {
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
     background-color: inherit;
     content: ' ';
-} */
+}
 
 .news-content {
     margin-left: 30px;
