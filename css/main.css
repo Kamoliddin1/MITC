@@ -137,10 +137,11 @@ ul.menu_about{
     border-radius: 5px;
     color: #1837d5;
     font-size: 14px;
-    font-family: "Roboto-Regular";
-    
+    font-family: "Roboto-Regular"; 
 }
-
+.enter_btn a:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
 .caption {
     position: absolute;
     z-index: 1;
@@ -200,6 +201,9 @@ button.owl-next {
     color: #fff;
     font-size: 14px;
 }
+.content-btn a:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
 /* секция Popular */
 .popular{
     background: #fafafa;
@@ -231,6 +235,7 @@ button.owl-next {
     text-decoration: underline;
     float: right;
     display: block;
+    color: #3d56d9;
 }
 .popular-content{
     background: #fff;
@@ -252,14 +257,13 @@ button.owl-next {
 	font: normal normal normal 30px/0 FontAwesome;
 	background: none;
 	color: #203dd4;
-	opacity: 0.75;
 }
+
 .wrap-slick button.slick-next.slick-arrow:before {
     content: "\f105";
 	font: normal normal normal 30px/0 FontAwesome;
 	background: none;
 	color: #203dd4;
-	opacity: 0.75;
 }
 .wrap-slick button.slick-prev.slick-arrow,.wrap-slick button.slick-next.slick-arrow {
     position: absolute;
@@ -293,15 +297,27 @@ button.owl-next {
     min-height: auto;
     transition: background-color 0.5s;
 }
-.news-animate{
-    background: rgba(0,0,0,.5);
+.news-item.slick-slide:focus {
+    outline: none;
 }
-.news-animate:before {
+.slick-center img{
+    opacity: 1;
+    transform: scale(1.08);
+}
+.slick-center img{
+    transition: all 300ms ease;
+    opacity: 0.8;
+}
+ .news-animate{
+    /* background: rgba(0,0,0,.5); */
+    padding-left: 40px;
+}
+/*.news-animate:before {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     background-color: inherit;
     content: ' ';
-}
+} */
 
 .news-content {
     margin-left: 30px;
@@ -428,6 +444,88 @@ p.address {
 .social-icons-item{
     display: inline-block;
     margin-right: 15px;
+    background: #f7f7f7;
+    border-radius: 50%;
+    padding: 6px 9px;
+    width: 36px;
+    height: 35px;
+}
+.fa-twitter:hover{
+    color: #41B1FC;
+}
+.fa-facebook:hover{
+    color: #39508E;
+}
+.fa-dribbble:hover{
+    color: #E34280;
+}
+.fa-pinterest-p:hover{
+    color: #C21D29;
+}
+.fa{
+    font-size: 22px;
+    color: #999999;
 }
 /* Секция Footer */
+.footer-list{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: #203dd4;
+    font-family: 'Montserrat-Regular';
+}
 
+.footer-title h2{
+    font-family: 'Roboto-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.footer-list-item{
+    list-style: none;
+    font-size: 14px;
+    line-height: 2;
+}
+.sing-in h3{
+    font-size: 16px;
+}
+.sing-in-email {
+    padding: 17px 45px;
+    width: 90%;
+    background: url('../img/email.png') no-repeat 14px 15px;
+    background-color: #fff;
+    color: #b9bdc3;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+label {
+    padding-bottom: 20px;
+}
+.footer-icons{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 6px;
+    border: 1px solid #6378e1;
+    border-radius: 5px;
+}
+.footer-icons-item{
+    display: inline-block;
+}
+a.fb {
+    border: 1px solid #6378e1;
+    border-top: none;
+    border-bottom: none;
+    padding: 10px 6px 13px 6px;
+}
+.foot-line {
+    background-color: #6378e1; height: 1px; border: 0; 
+}
+.foot-item h6{
+    font-size: 10px;
+}
+.foot-item h4{
+    font-size: 14px;
+    font-family: 'OpenSans-Regular';
+}
+.foot-item h4 span{
+    color: #8187a5;
+}
