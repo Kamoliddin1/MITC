@@ -182,7 +182,7 @@ button.owl-next {
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.4);
     text-decoration: none;
 }
 .owl-theme .owl-nav [class*=owl-]:focus {
@@ -310,6 +310,9 @@ button.owl-next {
     transition: all 300ms ease;
     opacity: 0.8;
 }
+.news-photo {
+    position: relative;
+}
 .news-animate{
     position: relative;
     width: 382px;
@@ -343,16 +346,16 @@ button.owl-next {
     text-align: center;
     margin: 55px 0 66px 0; 
 }
-.news-content-date {
-    position: absolute;
-    bottom: 110px;
-    text-transform: uppercase;
-}
 .news-content-p {
     position: absolute;
     bottom: 50px;
     font-size: 18px;
-    width: 7%;
+    /* width: 7%; */
+}
+.news-content-date {
+    position: absolute;
+    bottom: 110px;
+    text-transform: uppercase;
 }
 .slick-next{
     right: -70px;
@@ -505,7 +508,7 @@ p.address {
 }
 .sing-in-email {
     padding: 17px 45px;
-    width: 90%;
+    width: 300px;
     background: url('../img/email.png') no-repeat 14px 15px;
     background-color: #fff;
     color: #b9bdc3;

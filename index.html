@@ -19,8 +19,9 @@
 		<!-- slick -->
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
-    <!-- MAIN CSS -->
+		<!-- MAIN CSS -->
     <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <div class="wrap">
@@ -35,7 +36,9 @@
 						<div class="row">
 							<div class="col-md-4 gerb_content">
 								<div class="gerb">
-									<img src="img/gerb.png" alt="герб">	
+									<a href="#">
+										<img src="img/gerb.png" alt="герб">	
+									</a>
 								</div>
 								<h4>
 									Министерство по развитию
@@ -208,7 +211,21 @@
 							</div>
 
 							<div class="news-carousel">
-								<!-- <div class="col-md-4"> -->
+								<div class="news-item">
+										<div class="news-photo">
+											<div class="news-animate">
+													<img src="img/news_2.jpg" alt="news-photos">
+											</div>
+											<div class="news-content">
+												<div class="news-content-date">
+													28 февраля 2018
+												</div>
+												<div class="news-content-p">
+													Информационное общество: перспективы и возможности
+												</div>
+											</div>
+										</div>
+									</div>
 									<div class="news-item">
 										<div class="news-photo">
 											<div class="news-animate">
@@ -224,8 +241,7 @@
 											</div>
 										</div>
 									</div>
-								<!-- </div> -->
-								<!-- <div class="col-md-4"> -->
+
 									<div class="news-item">
 										<div class="news-photo">
 											<div class="news-animate">
@@ -241,8 +257,7 @@
 											</div>
 										</div>
 									</div>
-								<!-- </div> -->
-								<!-- <div class="col-md-4"> -->
+
 									<div class="news-item">
 										<div class="news-photo">
 											<div class="news-animate">
@@ -258,12 +273,11 @@
 											</div>
 										</div>
 									</div>
-								<!-- </div> -->
-								<!-- <div class="col-md-4"> -->
+
 									<div class="news-item">
 										<div class="news-photo">
 											<div class="news-animate">
-												<img src="img/news_1.jpg" alt="">
+												<img src="img/news_3.jpg" alt="">
 											</div>
 											<div class="news-content">
 												<div class="news-content-date">
@@ -275,7 +289,7 @@
 											</div>
 										</div>
 									</div>
-								<!-- </div> -->
+
 							</div>
 						</div>
 					</div>
@@ -460,7 +474,7 @@
 					nav: true,
 					dots:false,
 					navText: ["<img src='img/left-btn.png'>","<img src='img/right-btn.png'>"],
-					autoplay: 2000,
+					// autoplay: 2000,
 				});
 			});
 		</script>
