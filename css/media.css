@@ -27,7 +27,11 @@
     background: rgba(0,0,0,.5);
   }
 }
+
 @media (max-width: 1110px){
+  .caption{
+    max-width: 1024px;
+  }
   button.owl-prev {
     left: 10%;
   }
@@ -43,11 +47,41 @@
   .slick-next{
     right: -23px;
   }
-
 }
+
+@media (max-width:1024px){
+  .caption{
+    max-width: 940px;
+  }
+  button.owl-next {
+    right: 6%;
+  }
+}
+
 @media (max-width: 991px){
   .news-animate {
     width: 230px;
   }
-
+  .gerb_content {
+    display: block;
+    width: 37%;
+    padding: 0;
+  }
+  .list_content {
+    width: 21%;
+    padding: 0;
+  }
+  .lang_content {
+    width: 42%;
+    text-align: right;
+    padding-left: 0;
+  }
+  .sing-in-email{
+    width: 106%;
+  }
+  .foot-item h4 {
+    font-size: 14px;
+    font-family: 'OpenSans-Regular';
+    text-align: center;
+  }
 }
