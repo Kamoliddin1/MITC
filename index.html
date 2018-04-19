@@ -20,16 +20,22 @@
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
 		<!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/pure-drawer.css"/>
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+
     <div class="wrap">
 			<!-- <section>
 				<div class="main">
 					<p>Главная</p>
 				</div> 
 			</section> -->
+
+
+
+
 			<section>
 				<div class="top_header">
 					<div class="container">
@@ -75,7 +81,7 @@
 					</div>
 				</div>
 				
-				<div class="hd-carosel">
+				<div class="hd-carousel">
 					<div class="owl-carousel owl-theme">
 						<div class="item">
 							<img src="img/banner.jpg" class="fadeIn" alt="banner">
@@ -101,7 +107,7 @@
 						</div>
 					</div>
 				</div>
-      		</section>
+      </section>
 			<div class="clearfix"></div>
 			<section>
 				<div class="popular">
@@ -210,7 +216,7 @@
 								<h1>Последние новости</h1>
 							</div>
 
-							<div class="news-carousel">
+							<div class="news-carousel owl-carousel owl-theme">
 								<div class="news-item">
 										<div class="news-photo">
 											<div class="news-animate">
@@ -218,10 +224,10 @@
 											</div>
 											<div class="news-content">
 												<div class="news-content-date">
-													28 февраля 2018
+													<h5>13 февраля 2018</h5>
 												</div>
 												<div class="news-content-p">
-													Информационное общество: перспективы и возможности
+													<h4>Информационное общество: перспективы и возможности</h4>
 												</div>
 											</div>
 										</div>
@@ -233,10 +239,10 @@
 											</div>
 											<div class="news-content">
 												<div class="news-content-date">
-													24 Марта 2018
+													<h5>24 февраля 2018</h5>
 												</div>
 												<div class="news-content-p">
-													Информационное общество: перспективы и возможности
+													<h4>Информационное общество: перспективы и возможности</h4>
 												</div>
 											</div>
 										</div>
@@ -249,10 +255,10 @@
 											</div>
 											<div class="news-content">
 												<div class="news-content-date">
-													28 февраля 2018
+													<h5>28 Марта 2018</h5>
 												</div>
 												<div class="news-content-p">
-													Информационное общество: перспективы и возможности
+													<h4>Информационное общество: перспективы и возможности</h4>
 												</div>
 											</div>
 										</div>
@@ -265,10 +271,10 @@
 											</div>
 											<div class="news-content">
 												<div class="news-content-date">
-													25 февраля 2018
+													<h5>25 февраля 2018</h5>
 												</div>
 												<div class="news-content-p">
-													Информационное общество: перспективы и возможности
+													<h4>Информационное общество: перспективы и возможности</h4>
 												</div>
 											</div>
 										</div>
@@ -281,10 +287,10 @@
 											</div>
 											<div class="news-content">
 												<div class="news-content-date">
-													25 февраля 2018
+														<h5>25 февраля 2018</h5>
 												</div>
 												<div class="news-content-p">
-													Информационное общество: перспективы и возможности
+													<h4>Информационное общество: перспективы и возможности</h4>
 												</div>
 											</div>
 										</div>
@@ -466,9 +472,10 @@
 			<script src="js/owl.carousel.min.js"></script>
 		<!-- owl-carousel -->
 		<script>
-			$(document).ready(function() {
+			$(function() {
 
-				var owl = $('.owl-carousel').owlCarousel({
+				// asasasas
+				var owl = $('.hd-carousel .owl-carousel').owlCarousel({
 					loop:true,
 					items:1,
 					nav: true,
@@ -476,6 +483,35 @@
 					navText: ["<img src='img/left-btn.png'>","<img src='img/right-btn.png'>"],
 					// autoplay: 2000,
 				});
+				
+
+				$('.news-carousel').owlCarousel({
+					loop: true,
+					dots:true,
+					// nav:true,
+					center:true,
+					items:3,
+					margin: 10,
+					autoplay: 2000,
+					responsive:{
+						425:{
+							items:1,
+							center:false,
+						},
+						768:{
+							items:2,
+							center:false,
+						},
+						1024:{
+							items:3,
+						},
+						2560:{
+							items:3,
+						},
+   		 		}
+
+				});
+
 			});
 		</script>
 		
@@ -489,26 +525,21 @@
 					infinite: true,
 					autoplay: true,
 					autoplaySpeed: 3000,
+					responsive: [
+						{
+							breakpoint: 992,
+							settings: {
+								slidesToShow: 2,
+								slidesToScroll: 1,
+								infinite: true,
+							}
+						},
+					]
 				});
 			});
 		</script>
 		<!-- slick news -->
-		<script>
-			$(document).ready(function(){
-				$('.news-carousel').slick({
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					infinite: true,
-					// autoplay: true,
-					dots: true,
-					centerMode: true,
-					centerPadding: '0',	
-					prevArrow: "<img class='slick-prev slick-arrow' src='img/left.png'>",
-					nextArrow: "<img class='slick-next slick-arrow' src='img/right.png'>",	
-					autoplaySpeed: 2000,
-				});
-			});
-		</script>
+		
 		<!-- Google Map -->
 		<script>
 			function initMap(){
@@ -536,3 +567,9 @@
     async defer></script>
 </body>
 </html>
+
+
+
+
+<!-- "<img class='slick-prev slick-arrow' src='img/left.png'>",
+"<img class='slick-next slick-arrow' src='img/right.png'>" -->
