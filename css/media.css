@@ -164,6 +164,27 @@
   }
 }
 @media (max-width: 768px){
-  
-
+  .menu-icon{
+    display: block;
+  }
+  .list_content{
+    display: none;
+  }
+  ul.menu_about {
+    overflow: hidden;
+    padding-top: 24px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  ul.menu_about.open{
+    display: block;
+  }
+  .menu_about li {
+    list-style: none;
+    display: block;
+    float: none;
+    margin-right: 15px;
+  }
 }

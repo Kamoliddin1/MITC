@@ -20,7 +20,6 @@
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
 		<!-- MAIN CSS -->
-		<link rel="stylesheet" href="css/pure-drawer.css"/>
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/media.css">
 </head>
@@ -53,7 +52,7 @@
 								</h4>
 							</div>
 							<div class="col-md-4 col-sm-4 list_content">
-								<ul class="menu_about">
+								<ul id="My-menu_about" class="menu_about">
 									<li><a href="#">О нас</a></li>
 									<li><a href="#">Инвесторы</a></li>
 									<li><a href="#">Каталог</a></li>
@@ -77,6 +76,9 @@
 									<a href="#">Вход / Регистрация</a>
 								</div>
 							</div>
+									<a href="#" id="menu" class="menu-icon">
+										<i class="fa fa-bars" aria-hidden="true"></i>
+									</a>
 						</div>
 					</div>
 				</div>
@@ -538,8 +540,19 @@
 				});
 			});
 		</script>
-		<!-- slick news -->
-		
+		<!-- responsive menu-->
+		<script>
+			menu.onclick = function toggleMenu() {
+				var x = document.getElementById('My-menu_about');
+				if (x.className === 'menu_about'){
+					x.className += ' open';
+				} 
+				else{
+					x.className = 'menu';
+				}
+			};
+		</script>
+
 		<!-- Google Map -->
 		<script>
 			function initMap(){

@@ -142,6 +142,15 @@ ul.menu_about{
 .enter_btn a:hover{
     background: rgba(255, 255, 255, 0.7);
 }
+.menu-icon{
+    display: none;
+}
+.menu-icon .fa{
+    font-size: 22px;
+    color: #999999;
+    display: block;
+    float: right;
+}
 .caption {
     position: absolute;
     z-index: 1;
