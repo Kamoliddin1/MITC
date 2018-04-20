@@ -13,9 +13,9 @@
     margin: 0 auto;
 }
 .clearfix{
-	content: '';
-	display: table;
-	clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 body{
     font-family: 'Montserrat-Medium';
@@ -30,8 +30,8 @@ body{
     padding: 14px 0 4px 3px; 
 }
 .container {
-	max-width: 1170px;
-	margin: 0px auto;		
+    max-width: 1170px;
+    margin: 0px auto;       
 }
 /* Title menu */
 img {
@@ -147,7 +147,7 @@ ul.menu_about{
 }
 .menu-icon .fa{
     font-size: 22px;
-    color: #999999;
+    color: #fff;
     display: block;
     float: right;
 }
@@ -263,16 +263,16 @@ ul.menu_about{
 }
 .wrap-slick button.slick-prev.slick-arrow:before {
     content: "\f104";
-	font: normal normal normal 30px/0 FontAwesome;
-	background: none;
-	color: #203dd4;
+    font: normal normal normal 30px/0 FontAwesome;
+    background: none;
+    color: #203dd4;
 }
 
 .wrap-slick button.slick-next.slick-arrow:before {
     content: "\f105";
-	font: normal normal normal 30px/0 FontAwesome;
-	background: none;
-	color: #203dd4;
+    font: normal normal normal 30px/0 FontAwesome;
+    background: none;
+    color: #203dd4;
 }
 .wrap-slick button.slick-prev.slick-arrow,.wrap-slick button.slick-next.slick-arrow {
     position: absolute;
@@ -285,11 +285,11 @@ ul.menu_about{
     left: auto;
     right: 55px;
     border-radius: 20px 0 0 20px;
-    padding: 6px 12px 0px 9px;
+    padding: 6px 20px 0px 13px;
 }
 .wrap-slick button.slick-next.slick-arrow {
     right: 21px;
-    padding: 6px 9px 0px 12px;
+    padding: 6px 21px 0px 11px;
 }
 .col-md-4.slick-slide:focus {
     outline: none;
@@ -355,6 +355,9 @@ ul.menu_about{
     right: 0;
     padding: 15px;
 } */
+.news-content {
+    padding-left: 15px;
+}
 .news-title h1{
     color: #333;
     text-align: center;
