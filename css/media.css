@@ -10,11 +10,20 @@
   .gerb_content h4{
     font-size: 14px;
   }
+  .gerb_content_page2 h4{
+    font-size: 14px;
+  }
+
   .list_content {
     width: 32%;
     padding: 0;
   }
+
   .top_header a{
+    overflow: hidden;
+    font-size: 14px;
+  }
+  .top_header_page2 a{
     overflow: hidden;
     font-size: 14px;
   }
@@ -98,6 +107,11 @@
     /* width: 240px; */
   }
   .gerb_content {
+    display: block;
+    width: 37%;
+    padding: 0;
+  }
+  .gerb_content_page2 {
     display: block;
     width: 37%;
     padding: 0;
@@ -196,6 +210,20 @@
   .menu-icon{
     display: block;
   }
+  /* response menu_about,lang menu */
+  .lang ul li a{
+    color: #000;
+  }
+  .lang-search{
+    display: none;
+    overflow: hidden;
+    padding-top: 24px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
   ul.menu_about {
     display: none;
     overflow: hidden;
@@ -212,21 +240,22 @@
     display: block;
     z-index: 999;
     padding-top: 55px;
-    height: 100vh;
+    height: 500px;
   }
   .menu_about li {
     list-style: none;
     display: block;
     float: none;
     margin-left: 40px;
+    margin-bottom: 10px;
     line-height: 2.3;
   }
   .menu_about li a{
     color: #333;
   }
-  .menu_about li:hover {
+  .menu_about li a:hover {
     background: aliceblue;
-    text-align: center;
+    padding: 10px 60px 10px 20px;
   }
   .top_header a {
     overflow: hidden;
@@ -239,9 +268,15 @@
   }
   .gerb_content {
     width: 46%;
+    padding-left: 15px;
+  }  
+  .gerb_content_page2 {
+    width: 46%;
+    padding-left: 15px;
+    
   }  
   .lang_content {
-    width: 48%;
+    width: 47%;
     text-align: right;
     padding-left: 0;
   }
@@ -262,4 +297,59 @@
 }
 @media (max-width: 650px) {
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE2 */
+@media (max-width: 767px) {
+  
+  ul.menu_about_page2 {
+    display: none;
+    overflow: hidden;
+    padding-top: 24px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  ul.menu_about_page2.open{
+    background: rgba(255, 255, 255, 1);
+    width: 34%;
+    display: block;
+    z-index: 999;
+    padding-top: 55px;
+    height: 500px;
+  }
+  .menu_about_page2 li {
+    list-style: none;
+    display: block;
+    float: none;
+    margin-left: 40px;
+    line-height: 2.3;
+  }
+  .menu_about_page2 li a{
+    color: #333;
+  }
+  .menu_about_page2 li:hover {
+    background: aliceblue;
+    text-align: center;
+  }
+  .list_content_page2 {
+    width: 32%;
+    padding: 0;
+  }
 }

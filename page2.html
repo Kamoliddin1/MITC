@@ -26,14 +26,14 @@
 </head>
 <body>
   <div class="wrap">
-    <section class="main_content">
-      <div class="top_header banner">
+    <section class="main_content_page2">
+      <div class="banner top_header_page2">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-xs-8 gerb_content animated slideInRight">
+            <div class="col-md-4  col-xs-8 gerb_content_page2 animated slideInRight">
               <div class="gerb">
                 <a href="index.html">
-                  <img src="img/gerb.png" alt="герб">	
+                  <img src="img/logo.png" alt="герб">	
                 </a>
               </div>
               <h4>
@@ -42,8 +42,8 @@
                 и коммуникаций Республика Узбекистан
               </h4>
             </div>
-            <div class="col-md-4  col-xs-1 list_content">
-              <ul class="menu_about animated slideInRight">
+            <div class="col-md-4  col-xs-1 list_content list_content_page2">
+              <ul class="menu_about menu_about_page2 animated  slideInRight">
                 <li><a href="page1.html">О нас</a></li>
                 <li><a href="page2.html">Инвесторы</a></li>
                 <li><a href="#">Каталог</a></li>
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-4  col-xs-4 lang_content animated slideInRight">
               <div class="lang-search">
-                <div class="lang">
+                <div class="lang lang_page2">
                   <ul>
                     <li><a href="#">Uz</a></li>
                     <li><a href="#">Ru</a></li>
@@ -61,11 +61,11 @@
                 </div>
                 <div class="search">
                   <a href="#" class="search-toggler">
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-search fa-search_page2" aria-hidden="true"></i>
                   </a>
                 </div>
               </div>
-              <div class="enter_btn">
+              <div class="enter_btn enter_btn_page2">
                 <a href="#">Вход / Регистрация</a>
               </div>
             </div>
@@ -74,44 +74,20 @@
             </a>
           </div>
         </div>
-        <hr class="banner_line"> 
+
+        <hr class="line_page2">
+
         <div class="container">
-          <div class="banner_content">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-            <h6>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </h6>
+          <div class="evecontent_page2">
+            <h1>Evemap</h1>
+            <h5>Навигационный план эвакуации каждого ТРЦ. Отображает актуальное состояние систем безопасности. Оповестит о происшествии, покажет и сообщит короткий путь в безопасное место</h5>
           </div>
+          <div class="block_page2"></div>
         </div>
       </div>
     </section>
     <div class="clearfix"></div>
     
-    
-
-    <section>
-      <div class="container">
-        <div class="reforms">
-          <h1>
-            Последовательные реформы
-            — фактор благополучия
-          </h1>
-          <div class="reforms_content">
-            <p>На сегодняшний день информационные технологии имеют огромное значение в развитии нашей республики. За прошедшие годы проводимая правительством Республики Узбекистан политика по широкому внедрению и развитию информационных технологий в республики, постепенно приносят свои плоды. В частности:</p>
-
-            <p>–  В результате, проводимых работ по развитию национального сегмента сети Интернет количество доменов в домене“UZ” достигло 30 168 сайтов (рост на 119%). Количество пользователей национальной системы электронной почты uMail.uz, превысило 398 500 пользователей (рост на 151%);</p>
-            <p>–  Разработаны более 1 728 программных продуктов со стороны360 компаний разрабатывающих программные продукты. Из них 818 в направлении социальной сферы и образования, 249 в направлении экономики и финансов, 244 в направлении производства и других;</p>
-            <p>–  Внедрены 14 проектов (Единый портал интерактивных государственных услуг, комплексы информационных систем “Харид”, “Солиқ”, “Божхона”, “Бюджет”, “Нафақа”, “Клиринг”, “Лицензия”, Межведомственная интеграционная платформа, Система единой идентификации, базы данных, информационные регистры физических и юридических лиц а также автотранспорта) из создаваемых информационных систем и баз данных Электронного правительства, осуществляемых в рамках исполнения комплексной программы по развитию национальной информационно-коммуникационной системы;</p>
-            <p>–  10 620 (93,8%) из 11 325 общеобразовательных, средне специальных и высших учебных заведений подключены к сети ZiyoNET, количество ресурсов сети ZiyoNET превысило 130 000 (рост 119%);</p>
-            <p>–  Созданы официальные веб-сайты всех органов государственного управления и государственного власти на местах;</p>
-            <p>–  Внедрены 295 государственные информационные ресурсы,499 государственные информационные системы;</p>
-            <p>–  Количество пользователей имеющих электронные цифровые подписи достигло 1 720 тыс.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <section>
       <div class="footer-list">
@@ -199,13 +175,12 @@
         </div>
       </div>
     </section>
-  </div>
-  <!-- responsive menu-->
+  </div><!--wrap-->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
     $(function() {
       var menuToggler = $('#menu'),
-        menu = $('.menu_about');
+        menu = $('.menu_about_page2');
       
       menuToggler.click(function( e ) {
         e.preventDefault();

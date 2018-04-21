@@ -28,11 +28,6 @@
 <body>
 <!-- <script src="js/"></script> -->
     <div class="wrap">
-			<!-- <section>
-				<div class="main">
-					<p>Главная</p>
-				</div> 
-			</section> -->
 
 			<section>
 				<div class="top_header">
@@ -51,9 +46,9 @@
 								</h4>
 							</div>
 							<div class="col-md-4  col-xs-1 list_content">
-								<ul id="Mymenu_about" class="menu_about animated slideInRight">
+								<ul class="menu_about animated slideInRight">
 									<li><a href="page1.html">О нас</a></li>
-									<li><a href="#">Инвесторы</a></li>
+									<li><a href="page2.html">Инвесторы</a></li>
 									<li><a href="#">Каталог</a></li>
 									<li><a href="#">События</a></li>
 								</ul>
@@ -68,7 +63,9 @@
 										</ul>
 									</div>
 									<div class="search">
-										<a href="#" class="search-toggler"><img src="img/search.png" alt="search"></a>										
+										<a href="#" class="search-toggler">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</a>										
 									</div>
 								</div>
 								<div class="enter_btn">
@@ -482,7 +479,13 @@
 					nav: true,
 					dots:false,
 					navText: ["<img src='img/left-btn.png'>","<img src='img/right-btn.png'>"],
-					// autoplay: 2000,
+					autoplay: 2000,
+					responsive:{
+						320:{
+							mouseDrag:false,
+							touchDrag:true,
+						},
+   		 		}
 				});
 				
 
@@ -504,6 +507,8 @@
 						768:{
 							items:2,
 							center:false,
+							mouseDrag:false,
+							touchDrag:true,
 						},
 						730:{
 							items:2,
@@ -547,8 +552,6 @@
 		<script>
 			var menuToggler = $('#menu'),
 				menu = $('.menu_about');
-			
-
 
 			menuToggler.click(function( e ) {
 				e.preventDefault();
@@ -562,18 +565,6 @@
 					menu.removeClass('open');
 				}
 			});
-
-			/*
-			menu.onclick = function toggleMenu() {
-				var x = document.getElementById('Mymenu_about');
-				if (x.className === 'menu_about'){
-					x.className += ' open';
-				} 
-				else{
-					x.className = 'menu_about';
-				}
-			};
-			*/
 		</script>
 			<script src="js/wow.min.js"></script>
 			<script>
