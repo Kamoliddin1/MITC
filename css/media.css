@@ -245,6 +245,7 @@
   }
   .menu_about li {
     list-style: none;
+    color: #000;
     display: block;
     float: none;
     margin-left: 40px;
@@ -253,11 +254,22 @@
   }
   .menu_about li a{
     color: #333;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
   }
   .menu_about li a:hover {
     background: aliceblue;
-    padding: 10px 60px 10px 20px;
+    padding: 10px;
   }
+
+
+
+
+
+
+  
   .top_header a {
     overflow: hidden;
     font-size: 14px;

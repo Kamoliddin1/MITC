@@ -92,6 +92,23 @@ ul.menu_about{
     float: left;
     margin-right: 15px;
 }
+.menu_about li a{
+    position: relative;
+}
+.menu_about li a:before {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #00bcd4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+.menu_about li:hover a:before{
+    width: 50%;
+    transform: translateX(100%)
+}
 
 .lang_content{
     width: 33%;
@@ -331,6 +348,7 @@ a#menu {
     -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius: 30px;
+    transition: 2s;
 }
 .owl-theme .owl-dots [class*=owl-]:focus {
     outline: none;
@@ -466,6 +484,7 @@ p.address {
 .fa{
     font-size: 22px;
     color: #999999;
+    transition: .5s;
 }
 /* Секция Footer */
 .footer-list{
@@ -526,6 +545,7 @@ a.fb {
 .foot-item h4{
     font-size: 14px;
     font-family: 'OpenSans-Regular';
+    cursor: pointer;
 }
 .foot-item h4 span{
     color: #8187a5;
