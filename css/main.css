@@ -78,6 +78,10 @@ img {
 .list_content{
     width: 32%;
 }
+.sidebar_menu{
+    color: #111;
+    font-weight: bold;
+}
 ul.menu_about{
     overflow: hidden;
     /* padding-left: 45px; */
@@ -148,6 +152,10 @@ i.fa.fa-search {
 }
 .enter_btn a:hover{
     background: rgba(255, 255, 255, 0.7);
+}
+a#menu {
+    margin-top: 26px;
+    display: none;
 }
 .menu-icon{
     display: none;
