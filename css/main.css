@@ -281,6 +281,9 @@ a#menu {
 .popular-content{
     background: #fff;
     padding: 1px 17px 8px 12px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .popular-content h1{
     font-size: 16px;
